@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+-->
+<resources>
+  <dimen name="size_icon_small">24.00dp</dimen>
+  <dimen name="size_icon_base">32.00dp</dimen>
+  <dimen name="size_icon_large">40.00dp</dimen>
+  <dimen name="size_icon_xl">48.00dp</dimen>
+  <dimen name="size_icon_xxl">80.00dp</dimen>
+  <dimen name="size_padding_0">0.00dp</dimen>
+  <dimen name="size_padding_2">32.00dp</dimen>
+  <dimen name="size_padding_4">64.00dp</dimen>
+  <dimen name="size_padding_6">96.00dp</dimen>
+  <dimen name="size_padding_8">128.00dp</dimen>
+  <dimen name="size_padding_10">160.00dp</dimen>
+  <dimen name="size_padding_12">192.00dp</dimen>
+  <dimen name="size_padding_14">224.00dp</dimen>
+  <dimen name="size_padding_16">256.00dp</dimen>
+  <dimen name="size_padding_20">320.00dp</dimen>
+  <dimen name="size_padding_24">384.00dp</dimen>
+  <dimen name="size_padding_28">448.00dp</dimen>
+  <dimen name="size_padding_32">512.00dp</dimen>
+  <dimen name="size_padding_40">640.00dp</dimen>
+  <dimen name="size_padding_48">768.00dp</dimen>
+  <dimen name="size_padding_64">1024.00dp</dimen>
+  <dimen name="size_padding_80">1280.00dp</dimen>
+  <dimen name="size_padding_96">1536.00dp</dimen>
+</resources>

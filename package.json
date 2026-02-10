@@ -1,0 +1,40 @@
+{
+  "name": "pintarnya-design-system-v1",
+  "version": "0.1.1",
+  "description": "Design tokens for Pintarnya applications - colors, typography, spacing, and more",
+  "main": "dist/tokens.cjs",
+  "module": "dist/tokens.js",
+  "types": "dist/tokens.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/tokens.d.ts",
+      "import": "./dist/tokens.js",
+      "require": "./dist/tokens.cjs"
+    },
+    "./dist/variables.css": "./dist/variables.css"
+  },
+  "files": [
+    "dist",
+    "tokens",
+    "config.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "style-dictionary build",
+    "clean": "rm -rf dist android/styledictionary/src/main/res/values ios/Classes/Generated",
+    "prepublishOnly": "yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "style-dictionary",
+    "pintarnya",
+    "tokens"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "style-dictionary": "^4.0.0-prerelease.30"
+  }
+}

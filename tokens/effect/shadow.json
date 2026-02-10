@@ -1,0 +1,50 @@
+{
+  "effect": {
+    "shadow": {
+      "1": {
+        "box": {
+          "value": "0px 1px 2px rgba(33, 33, 33, 0.08), 0px 0px 1px rgba(33, 33, 33, 0.24)",
+          "type": "boxShadow"
+        },
+        "elevation": { "value": "2", "type": "elevation" }
+      },
+      "2": {
+        "box": {
+          "value": "0px 2px 4px rgba(33, 33, 33, 0.10), 0px 0px 2px rgba(33, 33, 33, 0.08)",
+          "type": "boxShadow"
+        },
+        "elevation": { "value": "4", "type": "elevation" }
+      },
+      "3": {
+        "box": {
+          "value": "0px 4px 12px rgba(33, 33, 33, 0.16), 0px 0px 3px rgba(33, 33, 33, 0.04)",
+          "type": "boxShadow"
+        },
+        "elevation": { "value": "8", "type": "elevation" }
+      },
+      "4": {
+        "box": {
+          "value": "0px 8px 12px rgba(33, 33, 33, 0.20), 0px 0px 4px rgba(33, 33, 33, 0.12)",
+          "type": "boxShadow"
+        },
+        "elevation": { "value": "12", "type": "elevation" }
+      },
+      "5": {
+        "box": {
+          "value": "0px 12px 16px rgba(33, 33, 33, 0.24), 0px 0px 5px rgba(33, 33, 33, 0.12)",
+          "type": "boxShadow"
+        },
+        "elevation": { "value": "16", "type": "elevation" }
+      },
+      "inverted": {
+        "2": {
+          "box": {
+            "value": "0px -2px 8px rgba(33, 33, 33, 0.10), 0px 0px 3px rgba(33, 33, 33, 0.06)",
+            "type": "boxShadow"
+          },
+          "elevation": { "value": "4", "type": "elevation" }
+        }
+      }
+    }
+  }
+}

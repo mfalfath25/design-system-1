@@ -1,0 +1,8 @@
+android/
+ios/
+.yarn/
+.pnp.cjs
+.pnp.loader.mjs
+*.log
+.DS_Store
+node_modules/
