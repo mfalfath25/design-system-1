@@ -28,7 +28,7 @@
     @"image": @{
       @"logo": @{
         @"horizontal": @{
-          @"value": @"assets/images/pintarnya-logo-horizontal.png",
+          @"value": @"assets/svg/pintarnya-logo-horizontal.svg",
           @"name": @"StyleDictionaryAssetImageLogoHorizontal",
           @"category": @"asset",
           @"type": @"image",
@@ -36,7 +36,7 @@
           @"subitem": @"horizontal"
           },
         @"horizontal-inverted": @{
-          @"value": @"assets/images/pintarnya-logo-horizontal-inverted.png",
+          @"value": @"assets/svg/pintarnya-logo-horizontal-inverted.svg",
           @"name": @"StyleDictionaryAssetImageLogoHorizontalInverted",
           @"category": @"asset",
           @"type": @"image",
@@ -44,7 +44,7 @@
           @"subitem": @"horizontal-inverted"
           },
         @"vertical": @{
-          @"value": @"assets/images/pintarnya-logo-vertical.png",
+          @"value": @"assets/svg/pintarnya-logo-vertical.svg",
           @"name": @"StyleDictionaryAssetImageLogoVertical",
           @"category": @"asset",
           @"type": @"image",
@@ -52,7 +52,7 @@
           @"subitem": @"vertical"
           },
         @"vertical-inverted": @{
-          @"value": @"assets/images/pintarnya-logo-vertical-inverted.png",
+          @"value": @"assets/svg/pintarnya-logo-vertical-inverted.svg",
           @"name": @"StyleDictionaryAssetImageLogoVerticalInverted",
           @"category": @"asset",
           @"type": @"image",
@@ -60,7 +60,7 @@
           @"subitem": @"vertical-inverted"
           },
         @"icon": @{
-          @"value": @"assets/images/pintarnya-logo-icon.png",
+          @"value": @"assets/svg/pintarnya-logo-only.svg",
           @"name": @"StyleDictionaryAssetImageLogoIcon",
           @"category": @"asset",
           @"type": @"image",
@@ -68,7 +68,7 @@
           @"subitem": @"icon"
           },
         @"icon-inverted": @{
-          @"value": @"assets/images/pintarnya-logo-icon-inverted.png",
+          @"value": @"assets/svg/pintarnya-logo-only-inverted.svg",
           @"name": @"StyleDictionaryAssetImageLogoIconInverted",
           @"category": @"asset",
           @"type": @"image",
@@ -86,14 +86,6 @@
           @"type": @"font",
           @"item": @"opensans",
           @"subitem": @"name"
-          },
-        @"ttf": @{
-          @"value": @"assets/fonts/OpenSans-Regular.ttf",
-          @"name": @"StyleDictionaryAssetFontOpensansTtf",
-          @"category": @"asset",
-          @"type": @"font",
-          @"item": @"opensans",
-          @"subitem": @"ttf"
           }
         },
       @"roboto": @{
@@ -104,14 +96,6 @@
           @"type": @"font",
           @"item": @"roboto",
           @"subitem": @"name"
-          },
-        @"ttf": @{
-          @"value": @"assets/fonts/Roboto-Regular.ttf",
-          @"name": @"StyleDictionaryAssetFontRobotoTtf",
-          @"category": @"asset",
-          @"type": @"font",
-          @"item": @"roboto",
-          @"subitem": @"ttf"
           }
         },
       @"poppins": @{
@@ -122,38 +106,6 @@
           @"type": @"font",
           @"item": @"poppins",
           @"subitem": @"name"
-          },
-        @"regular": @{
-          @"value": @"assets/fonts/Poppins-Regular.ttf",
-          @"name": @"StyleDictionaryAssetFontPoppinsRegular",
-          @"category": @"asset",
-          @"type": @"font",
-          @"item": @"poppins",
-          @"subitem": @"regular"
-          },
-        @"medium": @{
-          @"value": @"assets/fonts/Poppins-Medium.ttf",
-          @"name": @"StyleDictionaryAssetFontPoppinsMedium",
-          @"category": @"asset",
-          @"type": @"font",
-          @"item": @"poppins",
-          @"subitem": @"medium"
-          },
-        @"semibold": @{
-          @"value": @"assets/fonts/Poppins-SemiBold.ttf",
-          @"name": @"StyleDictionaryAssetFontPoppinsSemibold",
-          @"category": @"asset",
-          @"type": @"font",
-          @"item": @"poppins",
-          @"subitem": @"semibold"
-          },
-        @"bold": @{
-          @"value": @"assets/fonts/Poppins-Bold.ttf",
-          @"name": @"StyleDictionaryAssetFontPoppinsBold",
-          @"category": @"asset",
-          @"type": @"font",
-          @"item": @"poppins",
-          @"subitem": @"bold"
           }
         }
       }

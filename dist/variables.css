@@ -3,21 +3,15 @@
  */
 
 :root {
-  --asset-image-logo-horizontal: url("assets/images/pintarnya-logo-horizontal.png");
-  --asset-image-logo-horizontal-inverted: url("assets/images/pintarnya-logo-horizontal-inverted.png");
-  --asset-image-logo-vertical: url("assets/images/pintarnya-logo-vertical.png");
-  --asset-image-logo-vertical-inverted: url("assets/images/pintarnya-logo-vertical-inverted.png");
-  --asset-image-logo-icon: url("assets/images/pintarnya-logo-icon.png");
-  --asset-image-logo-icon-inverted: url("assets/images/pintarnya-logo-icon-inverted.png");
+  --asset-image-logo-horizontal: url("assets/svg/pintarnya-logo-horizontal.svg");
+  --asset-image-logo-horizontal-inverted: url("assets/svg/pintarnya-logo-horizontal-inverted.svg");
+  --asset-image-logo-vertical: url("assets/svg/pintarnya-logo-vertical.svg");
+  --asset-image-logo-vertical-inverted: url("assets/svg/pintarnya-logo-vertical-inverted.svg");
+  --asset-image-logo-icon: url("assets/svg/pintarnya-logo-only.svg");
+  --asset-image-logo-icon-inverted: url("assets/svg/pintarnya-logo-only-inverted.svg");
   --asset-font-opensans-name: 'Open Sans';
-  --asset-font-opensans-ttf: url("assets/fonts/OpenSans-Regular.ttf");
   --asset-font-roboto-name: Roboto;
-  --asset-font-roboto-ttf: url("assets/fonts/Roboto-Regular.ttf");
   --asset-font-poppins-name: Poppins;
-  --asset-font-poppins-regular: url("assets/fonts/Poppins-Regular.ttf");
-  --asset-font-poppins-medium: url("assets/fonts/Poppins-Medium.ttf");
-  --asset-font-poppins-semibold: url("assets/fonts/Poppins-SemiBold.ttf");
-  --asset-font-poppins-bold: url("assets/fonts/Poppins-Bold.ttf");
   --color-background-base: #ffffff;
   --color-background-subtle: #ffffff;
   --color-background-disabled: #cbd5e1;

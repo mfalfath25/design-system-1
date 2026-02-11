@@ -3,27 +3,27 @@
     "image": {
       "logo": {
         "horizontal": {
-          "value": "assets/images/pintarnya-logo-horizontal.png",
+          "value": "assets/svg/pintarnya-logo-horizontal.svg",
           "type": "asset"
         },
         "horizontal-inverted": {
-          "value": "assets/images/pintarnya-logo-horizontal-inverted.png",
+          "value": "assets/svg/pintarnya-logo-horizontal-inverted.svg",
           "type": "asset"
         },
         "vertical": {
-          "value": "assets/images/pintarnya-logo-vertical.png",
+          "value": "assets/svg/pintarnya-logo-vertical.svg",
           "type": "asset"
         },
         "vertical-inverted": {
-          "value": "assets/images/pintarnya-logo-vertical-inverted.png",
+          "value": "assets/svg/pintarnya-logo-vertical-inverted.svg",
           "type": "asset"
         },
         "icon": {
-          "value": "assets/images/pintarnya-logo-icon.png",
+          "value": "assets/svg/pintarnya-logo-only.svg",
           "type": "asset"
         },
         "icon-inverted": {
-          "value": "assets/images/pintarnya-logo-icon-inverted.png",
+          "value": "assets/svg/pintarnya-logo-only-inverted.svg",
           "type": "asset"
         }
       }

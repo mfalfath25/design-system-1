@@ -3,12 +3,12 @@
     "image": {
       "logo": {
         "horizontal": {
-          "value": "assets/images/pintarnya-logo-horizontal.png",
+          "value": "assets/svg/pintarnya-logo-horizontal.svg",
           "type": "asset",
           "filePath": "tokens/asset/assets.json",
           "isSource": true,
           "original": {
-            "value": "assets/images/pintarnya-logo-horizontal.png",
+            "value": "assets/svg/pintarnya-logo-horizontal.svg",
             "type": "asset"
           },
           "name": "asset_image_logo_horizontal",
@@ -26,12 +26,12 @@
           ]
         },
         "horizontal-inverted": {
-          "value": "assets/images/pintarnya-logo-horizontal-inverted.png",
+          "value": "assets/svg/pintarnya-logo-horizontal-inverted.svg",
           "type": "asset",
           "filePath": "tokens/asset/assets.json",
           "isSource": true,
           "original": {
-            "value": "assets/images/pintarnya-logo-horizontal-inverted.png",
+            "value": "assets/svg/pintarnya-logo-horizontal-inverted.svg",
             "type": "asset"
           },
           "name": "asset_image_logo_horizontal_inverted",
@@ -49,12 +49,12 @@
           ]
         },
         "vertical": {
-          "value": "assets/images/pintarnya-logo-vertical.png",
+          "value": "assets/svg/pintarnya-logo-vertical.svg",
           "type": "asset",
           "filePath": "tokens/asset/assets.json",
           "isSource": true,
           "original": {
-            "value": "assets/images/pintarnya-logo-vertical.png",
+            "value": "assets/svg/pintarnya-logo-vertical.svg",
             "type": "asset"
           },
           "name": "asset_image_logo_vertical",
@@ -72,12 +72,12 @@
           ]
         },
         "vertical-inverted": {
-          "value": "assets/images/pintarnya-logo-vertical-inverted.png",
+          "value": "assets/svg/pintarnya-logo-vertical-inverted.svg",
           "type": "asset",
           "filePath": "tokens/asset/assets.json",
           "isSource": true,
           "original": {
-            "value": "assets/images/pintarnya-logo-vertical-inverted.png",
+            "value": "assets/svg/pintarnya-logo-vertical-inverted.svg",
             "type": "asset"
           },
           "name": "asset_image_logo_vertical_inverted",
@@ -95,12 +95,12 @@
           ]
         },
         "icon": {
-          "value": "assets/images/pintarnya-logo-icon.png",
+          "value": "assets/svg/pintarnya-logo-only.svg",
           "type": "asset",
           "filePath": "tokens/asset/assets.json",
           "isSource": true,
           "original": {
-            "value": "assets/images/pintarnya-logo-icon.png",
+            "value": "assets/svg/pintarnya-logo-only.svg",
             "type": "asset"
           },
           "name": "asset_image_logo_icon",
@@ -118,12 +118,12 @@
           ]
         },
         "icon-inverted": {
-          "value": "assets/images/pintarnya-logo-icon-inverted.png",
+          "value": "assets/svg/pintarnya-logo-only-inverted.svg",
           "type": "asset",
           "filePath": "tokens/asset/assets.json",
           "isSource": true,
           "original": {
-            "value": "assets/images/pintarnya-logo-icon-inverted.png",
+            "value": "assets/svg/pintarnya-logo-only-inverted.svg",
             "type": "asset"
           },
           "name": "asset_image_logo_icon_inverted",
@@ -166,29 +166,6 @@
             "opensans",
             "name"
           ]
-        },
-        "ttf": {
-          "value": "assets/fonts/OpenSans-Regular.ttf",
-          "type": "asset",
-          "filePath": "tokens/asset/font.json",
-          "isSource": true,
-          "original": {
-            "value": "assets/fonts/OpenSans-Regular.ttf",
-            "type": "asset"
-          },
-          "name": "asset_font_opensans_ttf",
-          "attributes": {
-            "category": "asset",
-            "type": "font",
-            "item": "opensans",
-            "subitem": "ttf"
-          },
-          "path": [
-            "asset",
-            "font",
-            "opensans",
-            "ttf"
-          ]
         }
       },
       "roboto": {
@@ -214,29 +191,6 @@
             "roboto",
             "name"
           ]
-        },
-        "ttf": {
-          "value": "assets/fonts/Roboto-Regular.ttf",
-          "type": "asset",
-          "filePath": "tokens/asset/font.json",
-          "isSource": true,
-          "original": {
-            "value": "assets/fonts/Roboto-Regular.ttf",
-            "type": "asset"
-          },
-          "name": "asset_font_roboto_ttf",
-          "attributes": {
-            "category": "asset",
-            "type": "font",
-            "item": "roboto",
-            "subitem": "ttf"
-          },
-          "path": [
-            "asset",
-            "font",
-            "roboto",
-            "ttf"
-          ]
         }
       },
       "poppins": {
@@ -261,98 +215,6 @@
             "font",
             "poppins",
             "name"
-          ]
-        },
-        "regular": {
-          "value": "assets/fonts/Poppins-Regular.ttf",
-          "type": "asset",
-          "filePath": "tokens/asset/font.json",
-          "isSource": true,
-          "original": {
-            "value": "assets/fonts/Poppins-Regular.ttf",
-            "type": "asset"
-          },
-          "name": "asset_font_poppins_regular",
-          "attributes": {
-            "category": "asset",
-            "type": "font",
-            "item": "poppins",
-            "subitem": "regular"
-          },
-          "path": [
-            "asset",
-            "font",
-            "poppins",
-            "regular"
-          ]
-        },
-        "medium": {
-          "value": "assets/fonts/Poppins-Medium.ttf",
-          "type": "asset",
-          "filePath": "tokens/asset/font.json",
-          "isSource": true,
-          "original": {
-            "value": "assets/fonts/Poppins-Medium.ttf",
-            "type": "asset"
-          },
-          "name": "asset_font_poppins_medium",
-          "attributes": {
-            "category": "asset",
-            "type": "font",
-            "item": "poppins",
-            "subitem": "medium"
-          },
-          "path": [
-            "asset",
-            "font",
-            "poppins",
-            "medium"
-          ]
-        },
-        "semibold": {
-          "value": "assets/fonts/Poppins-SemiBold.ttf",
-          "type": "asset",
-          "filePath": "tokens/asset/font.json",
-          "isSource": true,
-          "original": {
-            "value": "assets/fonts/Poppins-SemiBold.ttf",
-            "type": "asset"
-          },
-          "name": "asset_font_poppins_semibold",
-          "attributes": {
-            "category": "asset",
-            "type": "font",
-            "item": "poppins",
-            "subitem": "semibold"
-          },
-          "path": [
-            "asset",
-            "font",
-            "poppins",
-            "semibold"
-          ]
-        },
-        "bold": {
-          "value": "assets/fonts/Poppins-Bold.ttf",
-          "type": "asset",
-          "filePath": "tokens/asset/font.json",
-          "isSource": true,
-          "original": {
-            "value": "assets/fonts/Poppins-Bold.ttf",
-            "type": "asset"
-          },
-          "name": "asset_font_poppins_bold",
-          "attributes": {
-            "category": "asset",
-            "type": "font",
-            "item": "poppins",
-            "subitem": "bold"
-          },
-          "path": [
-            "asset",
-            "font",
-            "poppins",
-            "bold"
           ]
         }
       }

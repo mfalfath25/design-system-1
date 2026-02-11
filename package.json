@@ -1,6 +1,6 @@
 {
   "name": "pintarnya-design-system-v1",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Design tokens for Pintarnya applications - colors, typography, spacing, and more",
   "main": "dist/tokens.cjs",
   "module": "dist/tokens.js",
@@ -21,7 +21,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "node build.js",
+    "build": "style-dictionary build",
     "clean": "rm -rf dist android/styledictionary/src/main/res/values ios/Classes/Generated",
     "prepublishOnly": "yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"

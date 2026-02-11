@@ -2,31 +2,13 @@
   "asset": {
     "font": {
       "opensans": {
-        "name": { "value": "Open Sans", "type": "fontFamily" },
-        "ttf": { "value": "assets/fonts/OpenSans-Regular.ttf", "type": "asset" }
+        "name": { "value": "Open Sans", "type": "fontFamily" }
       },
       "roboto": {
-        "name": { "value": "Roboto", "type": "fontFamily" },
-        "ttf": { "value": "assets/fonts/Roboto-Regular.ttf", "type": "asset" }
+        "name": { "value": "Roboto", "type": "fontFamily" }
       },
       "poppins": {
-        "name": { "value": "Poppins", "type": "fontFamily" },
-        "regular": {
-          "value": "assets/fonts/Poppins-Regular.ttf",
-          "type": "asset"
-        },
-        "medium": {
-          "value": "assets/fonts/Poppins-Medium.ttf",
-          "type": "asset"
-        },
-        "semibold": {
-          "value": "assets/fonts/Poppins-SemiBold.ttf",
-          "type": "asset"
-        },
-        "bold": {
-          "value": "assets/fonts/Poppins-Bold.ttf",
-          "type": "asset"
-        }
+        "name": { "value": "Poppins", "type": "fontFamily" }
       }
     }
   }
