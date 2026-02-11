@@ -5,6 +5,7 @@
   "main": "dist/tokens.cjs",
   "module": "dist/tokens.js",
   "types": "dist/tokens.d.ts",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/tokens.d.ts",
@@ -20,7 +21,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "style-dictionary build",
+    "build": "node build.js",
     "clean": "rm -rf dist android/styledictionary/src/main/res/values ios/Classes/Generated",
     "prepublishOnly": "yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"

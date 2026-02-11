@@ -1,0 +1,32 @@
+{
+  "asset": {
+    "image": {
+      "logo": {
+        "horizontal": {
+          "value": "assets/images/pintarnya-logo-horizontal.png",
+          "type": "asset"
+        },
+        "horizontal-inverted": {
+          "value": "assets/images/pintarnya-logo-horizontal-inverted.png",
+          "type": "asset"
+        },
+        "vertical": {
+          "value": "assets/images/pintarnya-logo-vertical.png",
+          "type": "asset"
+        },
+        "vertical-inverted": {
+          "value": "assets/images/pintarnya-logo-vertical-inverted.png",
+          "type": "asset"
+        },
+        "icon": {
+          "value": "assets/images/pintarnya-logo-icon.png",
+          "type": "asset"
+        },
+        "icon-inverted": {
+          "value": "assets/images/pintarnya-logo-icon-inverted.png",
+          "type": "asset"
+        }
+      }
+    }
+  }
+}

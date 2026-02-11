@@ -2,6 +2,12 @@
  * Do not edit directly, this file was auto-generated.
  */
 
+export const AssetImageLogoHorizontal: string;
+export const AssetImageLogoHorizontalInverted: string;
+export const AssetImageLogoVertical: string;
+export const AssetImageLogoVerticalInverted: string;
+export const AssetImageLogoIcon: string;
+export const AssetImageLogoIconInverted: string;
 export const AssetFontOpensansName: string;
 export const AssetFontOpensansTtf: string;
 export const AssetFontRobotoName: string;

@@ -25,6 +25,58 @@
   dispatch_once(&onceToken, ^{
     dictionary = @{
   @"asset": @{
+    @"image": @{
+      @"logo": @{
+        @"horizontal": @{
+          @"value": @"assets/images/pintarnya-logo-horizontal.png",
+          @"name": @"StyleDictionaryAssetImageLogoHorizontal",
+          @"category": @"asset",
+          @"type": @"image",
+          @"item": @"logo",
+          @"subitem": @"horizontal"
+          },
+        @"horizontal-inverted": @{
+          @"value": @"assets/images/pintarnya-logo-horizontal-inverted.png",
+          @"name": @"StyleDictionaryAssetImageLogoHorizontalInverted",
+          @"category": @"asset",
+          @"type": @"image",
+          @"item": @"logo",
+          @"subitem": @"horizontal-inverted"
+          },
+        @"vertical": @{
+          @"value": @"assets/images/pintarnya-logo-vertical.png",
+          @"name": @"StyleDictionaryAssetImageLogoVertical",
+          @"category": @"asset",
+          @"type": @"image",
+          @"item": @"logo",
+          @"subitem": @"vertical"
+          },
+        @"vertical-inverted": @{
+          @"value": @"assets/images/pintarnya-logo-vertical-inverted.png",
+          @"name": @"StyleDictionaryAssetImageLogoVerticalInverted",
+          @"category": @"asset",
+          @"type": @"image",
+          @"item": @"logo",
+          @"subitem": @"vertical-inverted"
+          },
+        @"icon": @{
+          @"value": @"assets/images/pintarnya-logo-icon.png",
+          @"name": @"StyleDictionaryAssetImageLogoIcon",
+          @"category": @"asset",
+          @"type": @"image",
+          @"item": @"logo",
+          @"subitem": @"icon"
+          },
+        @"icon-inverted": @{
+          @"value": @"assets/images/pintarnya-logo-icon-inverted.png",
+          @"name": @"StyleDictionaryAssetImageLogoIconInverted",
+          @"category": @"asset",
+          @"type": @"image",
+          @"item": @"logo",
+          @"subitem": @"icon-inverted"
+          }
+        }
+      },
     @"font": @{
       @"opensans": @{
         @"name": @{

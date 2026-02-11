@@ -3,6 +3,12 @@
  */
 
 :root {
+  --asset-image-logo-horizontal: url("assets/images/pintarnya-logo-horizontal.png");
+  --asset-image-logo-horizontal-inverted: url("assets/images/pintarnya-logo-horizontal-inverted.png");
+  --asset-image-logo-vertical: url("assets/images/pintarnya-logo-vertical.png");
+  --asset-image-logo-vertical-inverted: url("assets/images/pintarnya-logo-vertical-inverted.png");
+  --asset-image-logo-icon: url("assets/images/pintarnya-logo-icon.png");
+  --asset-image-logo-icon-inverted: url("assets/images/pintarnya-logo-icon-inverted.png");
   --asset-font-opensans-name: 'Open Sans';
   --asset-font-opensans-ttf: url("assets/fonts/OpenSans-Regular.ttf");
   --asset-font-roboto-name: Roboto;

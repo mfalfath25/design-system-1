@@ -102,13 +102,83 @@ const primaryColor: string = ColorBrandPrimaryBase; // ✅ Type-safe
 
 ## Available Tokens
 
-The design system includes the following token categories:
-
 - **Colors**: Base colors, brand colors, background colors, font colors, border colors
 - **Sizes**: Font sizes, spacing, dimensions
 - **Typography**: Font families and styles
 - **Icons**: Material icon names
+- **Assets**: Logo images and other visual assets
 - **Time**: Animation durations
+
+### Using Assets
+
+The design system includes logo assets that can be used in your applications.
+
+#### Next.js
+
+```typescript
+import { AssetImageLogoHorizontal, AssetImageLogoIcon } from 'pintarnya-design-system-v1';
+import Image from 'next/image';
+
+export default function Header() {
+  return (
+    <header>
+      {/* Using Next.js Image component with require */}
+      <Image
+        src={require(`../../${AssetImageLogoHorizontal}`)}
+        alt="Pintarnya Logo"
+        width={200}
+        height={50}
+      />
+
+      {/* Or as a regular img tag */}
+      <img
+        src={AssetImageLogoIcon}
+        alt="Pintarnya Icon"
+        className="logo-icon"
+      />
+    </header>
+  );
+}
+```
+
+#### React Native
+
+```typescript
+import {
+  AssetImageLogoHorizontal,
+  AssetImageLogoIcon,
+  AssetImageLogoVertical
+} from 'pintarnya-design-system-v1';
+import { Image, View } from 'react-native';
+
+export default function AppHeader() {
+  return (
+    <View>
+      {/* Using require with the asset path */}
+      <Image
+        source={require(`../../${AssetImageLogoHorizontal}`)}
+        style={{ width: 200, height: 50 }}
+        resizeMode="contain"
+      />
+
+      {/* Icon variant */}
+      <Image
+        source={require(`../../${AssetImageLogoIcon}`)}
+        style={{ width: 40, height: 40 }}
+      />
+    </View>
+  );
+}
+```
+
+**Available Asset Tokens:**
+
+- `AssetImageLogoHorizontal` - Full horizontal logo
+- `AssetImageLogoHorizontalInverted` - Horizontal logo (inverted colors)
+- `AssetImageLogoVertical` - Vertical stacked logo
+- `AssetImageLogoVerticalInverted` - Vertical logo (inverted colors)
+- `AssetImageLogoIcon` - Icon/symbol only
+- `AssetImageLogoIconInverted` - Icon (inverted colors)
 
 ### Example Token Names
 
