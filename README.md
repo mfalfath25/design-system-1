@@ -1,241 +1,184 @@
 # Pintarnya Design System
 
-Design tokens for Pintarnya applications - colors, typography, spacing, and more. This package provides a consistent set of design tokens that can be used across React Native, Next.js, and native iOS/Android applications.
+A lightweight design token package for Pintarnya applications. Contains design tokens (colors, typography, spacing) and SVG logo assets.
+
+**Bundle size**: 276KB
 
 ## Installation
 
 ```bash
-# Using Yarn
 yarn add pintarnya-design-system-v1
-
-# Using npm
+# or
 npm install pintarnya-design-system-v1
 ```
 
-> **Note**: This package supports both CommonJS (`require`) and ES modules (`import`). It will automatically use the correct format based on your project configuration.
-
-## Usage
+## Quick Start
 
 ### React Native
-
-Import tokens directly as JavaScript constants:
-
-```javascript
-import {
-  ColorBrandPrimaryBase,
-  ColorBackgroundBase,
-  ColorFontBase,
-  SizeFontBase,
-} from "pintarnya-design-system-v1";
-import { StyleSheet } from "react-native";
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: ColorBackgroundBase,
-    padding: 16,
-  },
-  text: {
-    color: ColorFontBase,
-    fontSize: parseInt(SizeFontBase),
-  },
-  button: {
-    backgroundColor: ColorBrandPrimaryBase,
-  },
-});
-```
-
-### Next.js / React Web
-
-#### Option 1: JavaScript Imports
 
 ```typescript
 import {
   ColorBrandPrimaryBase,
   ColorBackgroundBase,
-  ColorFontBase
+  SizeFontBase,
+  AssetFontPoppinsName,
+} from "pintarnya-design-system-v1";
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: ColorBackgroundBase,
+  },
+  text: {
+    fontFamily: AssetFontPoppinsName, // "Poppins"
+    fontSize: parseInt(SizeFontBase),
+    color: ColorBrandPrimaryBase,
+  },
+});
+```
+
+### Next.js
+
+```typescript
+import {
+  ColorBrandPrimaryBase,
+  AssetImageLogoHorizontal,
+  AssetFontPoppinsName,
 } from 'pintarnya-design-system-v1';
 
-export default function MyComponent() {
+// Use with next/font
+import { Poppins } from 'next/font/google';
+const poppins = Poppins({ weight: ['400', '500', '600', '700'] });
+
+export default function App() {
   return (
     <div style={{ backgroundColor: ColorBackgroundBase }}>
-      <h1 style={{ color: ColorFontBase }}>Hello World</h1>
-      <button style={{ backgroundColor: ColorBrandPrimaryBase }}>
-        Click me
-      </button>
+      <img src={AssetImageLogoHorizontal} alt="Logo" />
+      <h1 className={poppins.className}>Hello World</h1>
     </div>
   );
 }
 ```
 
-#### Option 2: CSS Variables
-
-Import the CSS file in your `_app.tsx` or layout:
+### CSS Variables
 
 ```typescript
-// pages/_app.tsx or app/layout.tsx
+// Import in _app.tsx or layout.tsx
 import "pintarnya-design-system-v1/dist/variables.css";
 ```
 
-Then use CSS variables in your stylesheets:
-
 ```css
-.container {
-  background-color: var(--color-background-base);
-  color: var(--color-font-base);
-}
-
 .button {
   background-color: var(--color-brand-primary-base);
   color: var(--color-font-button-primary);
 }
 ```
 
-### TypeScript Support
+## What's Included
 
-This package includes TypeScript definitions. All tokens are typed as `string`:
+### Design Tokens
+
+- **Colors**: Brand, background, font, border colors
+- **Typography**: Font family names (Poppins, Roboto, Open Sans)
+- **Spacing**: Consistent spacing values
+- **Sizes**: Font sizes, dimensions
+- **Time**: Animation durations
+
+### SVG Logo Assets
+
+All logos are exported as SVG file paths (ready to use):
+
+```typescript
+import {
+  AssetImageLogoHorizontal,        // Full horizontal logo
+  AssetImageLogoHorizontalInverted, // Horizontal (inverted)
+  AssetImageLogoVertical,           // Vertical stacked
+  AssetImageLogoVerticalInverted,   // Vertical (inverted)
+  AssetImageLogoIcon,               // Icon only
+  AssetImageLogoIconInverted,       // Icon (inverted)
+} from 'pintarnya-design-system-v1';
+
+// Use directly in img tags
+<img src={AssetImageLogoHorizontal} alt="Pintarnya" />
+```
+
+### Font Names
+
+Font family names are exported as tokens. **Font files are NOT included** - load fonts separately in your project:
+
+```typescript
+// Font name tokens
+AssetFontPoppinsName  // "Poppins"
+AssetFontRobotoName   // "Roboto"
+AssetFontOpensansName // "Open Sans"
+
+// Next.js: Use with next/font
+import { Poppins } from 'next/font/google';
+
+// React Native: Link fonts in your project, then use:
+<Text style={{ fontFamily: AssetFontPoppinsName }}>
+```
+
+## Example Tokens
+
+```javascript
+// Brand Colors
+ColorBrandPrimaryBase; // "#2a83fd"
+ColorBrandPrimaryLight; // "#5ca0ff"
+ColorBrandPrimaryDark; // "#1a5fcc"
+
+// Background Colors
+ColorBackgroundBase; // "#ffffff"
+ColorBackgroundPrimary; // "#2a83fd"
+ColorBackgroundSuccess; // "#36bc4c"
+
+// Font Colors
+ColorFontBase; // "#001833"
+ColorFontSecondary; // "#64748b"
+
+// Spacing
+SizeSpacingXs; // "4px"
+SizeSpacingMd; // "16px"
+SizeSpacingXl; // "32px"
+```
+
+## TypeScript Support
+
+Full TypeScript support included:
 
 ```typescript
 import { ColorBrandPrimaryBase } from "pintarnya-design-system-v1";
 
-const primaryColor: string = ColorBrandPrimaryBase; // ✅ Type-safe
+const color: string = ColorBrandPrimaryBase; // ✅ Type-safe
 ```
 
-## Available Tokens
+## Platform Support
 
-- **Colors**: Base colors, brand colors, background colors, font colors, border colors
-- **Sizes**: Font sizes, spacing, dimensions
-- **Typography**: Font families and styles
-- **Icons**: Material icon names
-- **Assets**: Logo images and other visual assets
-- **Time**: Animation durations
-
-### Using Assets
-
-The design system includes logo assets that can be used in your applications.
-
-#### Next.js
-
-```typescript
-import { AssetImageLogoHorizontal, AssetImageLogoIcon } from 'pintarnya-design-system-v1';
-import Image from 'next/image';
-
-export default function Header() {
-  return (
-    <header>
-      {/* Using Next.js Image component with require */}
-      <Image
-        src={require(`../../${AssetImageLogoHorizontal}`)}
-        alt="Pintarnya Logo"
-        width={200}
-        height={50}
-      />
-
-      {/* Or as a regular img tag */}
-      <img
-        src={AssetImageLogoIcon}
-        alt="Pintarnya Icon"
-        className="logo-icon"
-      />
-    </header>
-  );
-}
-```
-
-#### React Native
-
-```typescript
-import {
-  AssetImageLogoHorizontal,
-  AssetImageLogoIcon,
-  AssetImageLogoVertical
-} from 'pintarnya-design-system-v1';
-import { Image, View } from 'react-native';
-
-export default function AppHeader() {
-  return (
-    <View>
-      {/* Using require with the asset path */}
-      <Image
-        source={require(`../../${AssetImageLogoHorizontal}`)}
-        style={{ width: 200, height: 50 }}
-        resizeMode="contain"
-      />
-
-      {/* Icon variant */}
-      <Image
-        source={require(`../../${AssetImageLogoIcon}`)}
-        style={{ width: 40, height: 40 }}
-      />
-    </View>
-  );
-}
-```
-
-**Available Asset Tokens:**
-
-- `AssetImageLogoHorizontal` - Full horizontal logo
-- `AssetImageLogoHorizontalInverted` - Horizontal logo (inverted colors)
-- `AssetImageLogoVertical` - Vertical stacked logo
-- `AssetImageLogoVerticalInverted` - Vertical logo (inverted colors)
-- `AssetImageLogoIcon` - Icon/symbol only
-- `AssetImageLogoIconInverted` - Icon (inverted colors)
-
-### Example Token Names
-
-```javascript
-// Brand Colors
-ColorBrandPrimaryBase;
-ColorBrandPrimaryLight;
-ColorBrandPrimaryDark;
-
-// Background Colors
-ColorBackgroundBase;
-ColorBackgroundAlt;
-ColorBackgroundSuccess;
-ColorBackgroundError;
-
-// Font Colors
-ColorFontBase;
-ColorFontSecondary;
-ColorFontLink;
-
-// And many more...
-```
+- ✅ **React Native** - JavaScript tokens
+- ✅ **Next.js / React Web** - JavaScript tokens + CSS variables
+- ✅ **iOS** - Native Objective-C files in `ios/`
+- ✅ **Android** - Native XML resources in `android/`
 
 ## Development
 
-### Building Tokens
-
-To rebuild the design tokens after making changes to the source files in `tokens/`:
+### Build Tokens
 
 ```bash
 yarn build
 ```
 
-This generates:
+Generates:
 
-- `dist/tokens.js` - ES6 module exports
+- `dist/tokens.js` - ES6 module
+- `dist/tokens.cjs` - CommonJS module
 - `dist/tokens.d.ts` - TypeScript definitions
 - `dist/variables.css` - CSS custom properties
-- `dist/tokens.json` - Raw JSON format
-- `ios/` - iOS native code (Objective-C)
-- `android/` - Android native resources (XML)
+- `dist/tokens.json` - Raw JSON
+- `ios/` - iOS native code
+- `android/` - Android native resources
 
-### Modifying Tokens
+### Modify Tokens
 
-Edit the JSON files in the `tokens/` directory:
-
-```
-tokens/
-  ├── color/
-  │   ├── base.json
-  │   ├── font.json
-  │   └── ...
-  ├── size/
-  └── font.json
-```
-
-After making changes, run `yarn build` to regenerate all platform outputs.
+Edit JSON files in `tokens/` directory, then run `yarn build`.
 
 ## License
 
