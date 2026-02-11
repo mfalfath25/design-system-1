@@ -1,12 +1,12 @@
 {
   "color": {
-    "border": {
+    "text": {
       "default": {
-        "value": "#E1E6EF",
+        "value": "#001533",
         "type": "color"
       },
       "subtle": {
-        "value": "#F1F3F9",
+        "value": "#5F6C85",
         "type": "color"
       },
       "disabled": {
@@ -17,8 +17,12 @@
         "value": "#FFFFFF",
         "type": "color"
       },
-      "brand": {
+      "primary": {
         "value": "#2A83FD",
+        "type": "color"
+      },
+      "primary-darker": {
+        "value": "#0680C6",
         "type": "color"
       },
       "error": {

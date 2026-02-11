@@ -1,12 +1,12 @@
 {
   "color": {
-    "border": {
+    "icon": {
       "default": {
-        "value": "#E1E6EF",
+        "value": "#001533",
         "type": "color"
       },
       "subtle": {
-        "value": "#F1F3F9",
+        "value": "#5F6C85",
         "type": "color"
       },
       "disabled": {

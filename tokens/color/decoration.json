@@ -1,0 +1,58 @@
+{
+  "color": {
+    "decoration": {
+      "yellow-brand": {
+        "value": "#FFE600",
+        "type": "color"
+      },
+      "yellow-brand-light": {
+        "value": "#FFFACC",
+        "type": "color"
+      },
+      "yellow-brand-dark": {
+        "value": "#998A00",
+        "type": "color"
+      },
+      "cari-cuan": {
+        "value": "#05A569",
+        "type": "color"
+      },
+      "cari-cuan-light": {
+        "value": "#D0F4E2",
+        "type": "color"
+      },
+      "cari-cuan-dark": {
+        "value": "#007545",
+        "type": "color"
+      },
+      "kelas-karir": {
+        "value": "#6C53E8",
+        "type": "color"
+      },
+      "kelas-karir-light": {
+        "value": "#E3DEFC",
+        "type": "color"
+      },
+      "kelas-karir-dark": {
+        "value": "#4A35C5",
+        "type": "color"
+      },
+      "cari-promo": {
+        "value": "#FF5500",
+        "type": "color"
+      },
+      "cari-promo-light": {
+        "value": "#F9BCAC",
+        "type": "color"
+      },
+      "cari-promo-dark": {
+        "value": "#CC3500",
+        "type": "color"
+      },
+      "pintarnya-pro": {
+        "value": "linear-gradient(#2A076B, #6E2598)",
+        "type": "color"
+      }
+    }
+  }
+}
